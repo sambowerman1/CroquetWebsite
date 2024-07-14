@@ -17,4 +17,4 @@ app.get('/standings', (req, res) => {
     res.sendFile(path.join(__dirname, 'Standings.html')); // Serve your standings.html file
 });
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`)); // Li
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`)); // 
