@@ -9,11 +9,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/players', (req, res) => {
-    res.sendFile(path.join(__dirname, 'players.html')); // Serve your players.html file
+    res.sendFile(path.join(__dirname, 'profiles.html')); // Serve your players.html file
 });
 
 app.get('/standings', (req, res) => {
-    res.sendFile(path.join(__dirname, 'standings.html')); // Serve your standings.html file
+    res.sendFile(path.join(__dirname, 'Standings.html')); // Serve your standings.html file
 });
 
 app.listen(3000, () => console.log('Server running on port 3000')); // Listen on port 3000
