@@ -24,6 +24,12 @@ app.get('/mobile', (req, res) => {
 app.get('/mobilestandings', (req, res) => {
     res.sendFile(path.join(__dirname, 'mobilestandings.html')); // Serve your standings.html file
 });
+app.get('/mobileplayers', (req, res) => {
+    res.sendFile(path.join(__dirname, 'mobileplayers.html')); // Serve your standings.html file
+});
 
+app.get('/about', (req, res) => {
+    res.sendFile(path.join(__dirname, 'about.html')); // Serve your standings.html file
+});
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`)); // 
