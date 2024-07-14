@@ -17,4 +17,13 @@ app.get('/standings', (req, res) => {
     res.sendFile(path.join(__dirname, 'Standings.html')); // Serve your standings.html file
 });
 
+
+app.get('/mobile', (req, res) => {
+    res.sendFile(path.join(__dirname, 'mobile.html')); // Serve your standings.html file
+});
+app.get('/mobilestandings', (req, res) => {
+    res.sendFile(path.join(__dirname, 'mobilestandings.html')); // Serve your standings.html file
+});
+
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`)); // 
