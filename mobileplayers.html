@@ -49,8 +49,9 @@
         }
         .menu-item{
             color: #E3BE52;
-            font-size: 15px;
+            font-size: 10px;
             font-family: 'Lancelot', cursive;
+            padding-top: 5px;
         }
   
 
@@ -84,12 +85,35 @@
             padding-right: 7px;
             padding-bottom: 25px;         
          }
+         .logo-container img {
+        display: block;
+        margin: auto;
+        transform: scale(.9); /* Reduce the size to 75% of the original */
+        max-width: 100%; /* Prevent the logo from becoming larger than its container */
+        max-height: 100%;
+        height: auto;
+        width: auto;
+        padding-top: 0px;
+        padding-left: 50px;
+        padding-bottom: 0px;
+        }
+
+        .logo-container img {
+            height: 20px;
+            width: 20px;
+            max-width: 100%; /* Prevent the logo from becoming larger than its container */
+            max-height: 100%;
+        }
 
     </style>
 </head>
 <body>
     <header>
         <div class="home"><a href="/" style="text-decoration: none; color: inherit;">Home</a></div>
+        <div class="logo-container">
+            <img src="RoslynNationalCroquetLogo.png" alt="Logo">
+        </div>
+
         <div class="menu">
             <div class="menu-item"><a href="/mobileplayers" style="text-decoration: none; color: inherit;">Players</a></div>
             <div class="menu-item"><a href="/mobilestandings" style="text-decoration: none; color: inherit;">Standings</a></div>
