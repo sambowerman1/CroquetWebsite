@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Version</title>
     <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
-    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+   <style>
         body, h1 {
             margin: 0; /* Remove default margin */
         }
@@ -104,26 +106,26 @@
         }
         .malletimg{ 
 
-            width: 40%;
+  
             height: auto;
             border-radius: 11px 11px 0px 0px;
             display: block; /* Added to make the image a block-level element */
         }
 
         .malletimg-container {
-        padding-left: 15px;
-        padding-top: 10px;
-        padding-bottom: 0px;
+            flex: 0 1 calc(50% - 20px); /* Allows the box to grow and shrink but not beyond 50% of the container width minus some margin */
+            margin: 5px; /* Provides space between the containers */
+            box-sizing: border-box; /* Ensures the margin is included in the width */
         
         }
 
         .text-box {
-        width: 40%;
+
         background-color: white;
         margin-top: 0;
         border-radius: 0px 0px 11px 11px;
         font-size: 5px;
-        padding-bottom: 25px;
+        padding-bottom: 20px;
         text-align: center;
         }
         .textboxtext{
@@ -136,14 +138,34 @@
     
 
         }
-        .textboxsubtext{
+        .textboxtextsubtext{
             color: #797d81;
-            font-size: 12px;
-            font-family: 'Playfair Display', serif;
+            font-size: 8px;
+            font-family: 'Roboto', sans-serif;
             text-align: center;
         }
 
+        .cards-container {
+            padding-top: 15px;
+            display: flex;
+            flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
+            justify-content: space-around; /* Distribute the cards evenly */
+            /* Ensure this container has a full width */
+            align-items: flex-start;
+        }
 
+        .malletimg, .text-box {
+        width: 95%; /* Adjusted to match the new container size */
+        }
+
+        .mallet-link {
+            text-decoration: none;
+            color: inherit;
+            flex: 0 1 calc(50% - 20px); /* Adjust based on your previous settings */
+            box-sizing: border-box;
+            margin: 10px; /* Adjust based on your previous settings */
+            display: block; /* This makes the link fill the area of its flex item container */
+        }
     </style>
 </head>
 <body>
@@ -172,16 +194,40 @@
 
     <div class="latestnews">Latest News </div> 
 
-    <a href="/newmallet" style="text-decoration: none; color: inherit;">
-        <div class="malletimg-container">
-            <img src="newmallet.JPG" alt="New Mallet" class="malletimg">
-            <div class="text-box">
-                <div class="textboxtextsubtext">&nbsp;  </div>
-                <div class="textboxtextsubtext">Fri, Jul 19, 2024 </div>
-                <div class="textboxtext">New Mallet Stirs Up Controversy</div>
+    <div class="cards-container">
+        
+        <!-- <a href="/newmallet" style="text-decoration: none; color: inherit;"> -->
+        <a href="/newmallet" class="mallet-link">
+            <div class="malletimg-container">
+                <img src="newmallet.JPG" alt="New Mallet" class="malletimg">
+                <div class="text-box">
+                    <div class="textboxtextsubtext">&nbsp;  </div>
+                    <div class="textboxtextsubtext">Fri, Jul 19, 2024 </div>
+                    <div class="textboxtext">New Mallet Stirs Up Controversy</div>
+                </div>
             </div>
-        </div>
-    </a>
+        </a>
+        <!-- </a> -->
+        
+
+            <!-- <a href="/WeeklyRecap" style="text-decoration: none; color: inherit;"> -->
+            <a href="/WeeklyRecap" class="mallet-link">
+                <div class="malletimg-container">
+                    <img src="assets/IMG_1314.JPG" alt="WeeklyRecap" class="malletimg">
+                    <div class="text-box">
+                        <div class="textboxtextsubtext">&nbsp;  </div>
+                        <div class="textboxtextsubtext">Fri, Jul 19, 2024 </div>
+                        <div class="textboxtext">New Mallet Stirs Up Controversy</div>
+                    </div>
+                </div>
+            </a>
+            <!-- </a> -->
+        
+
+
+
+
+    </div>
 
 </body>
 </html>
