@@ -36,4 +36,8 @@ app.get('/newmallet', (req, res) => {
     res.sendFile(path.join(__dirname, 'newmallet.html')); // Serve your standings.html file
 });
 
+app.get('/WeeklyRecap', (req, res) => {
+    res.sendFile(path.join(__dirname, 'WeeklyRecap.html')); // Serve your standings.html file
+});
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`)); // 
