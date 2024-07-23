@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Version</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body, h1 {
+            margin: 0; /* Remove default margin */
+        }
+        body {
+            background-color: #E7DFCE;
+            font-family: 'Lancelot', cursive;
+        }
+        header {
+            background-color: #2D4934;
+            color: #E3BE52;
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            display: flex; /* Use Flexbox */
+            gap: 10px; /* Add some space between the menu items */
+            justify-content: space-between;
+            padding-right: 5px; 
+            padding-left: 5px;
+        }
+        header h1 {
+            padding-left: 10px; /* Add left padding to the h1 element */
+        }
+        .content {
+            padding: 20px;
+        }
+        .title{
+            color: #2D4934;
+            font-size: 25px;
+            font-family: 'Playfair Display', serif;
+            text-align: left;
+            padding-top: 25px;
+            font-weight: bold;
+            padding-left: 10px;
+            padding-bottom: 0px;
+        }
+        img {
+            width: 50%;
+            height: auto;
+            padding-left: 25%;
+            padding-top: 15px;
+        }
+        .menu {
+        display: flex; /* Use Flexbox */
+        gap: 10px; /* Add some space between the menu items */
+        }
+        .menu-item{
+            color: #E3BE52;
+            font-size: 10px;
+            font-family: 'Lancelot', cursive;
+            padding-top: 5px;
+        }
+  
+
+        .ourstory{
+            color: #2D4934;
+            font-size: 15px;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            padding-left: 3px;
+            font-weight: bold;
+        }
+        .our-story-description{
+            color: #2D4934;
+            font-size: 12px;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            margin: 1px 0;
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-bottom: 25px;         
+         }
+         .logo-container img {
+        display: block;
+        margin: auto;
+        transform: scale(.9); /* Reduce the size to 75% of the original */
+        max-width: 100%; /* Prevent the logo from becoming larger than its container */
+        max-height: 100%;
+        height: auto;
+        width: auto;
+        padding-top: 0px;
+        padding-left: 50px;
+        padding-bottom: 0px;
+        }
+
+        .logo-container img {
+            height: 20px;
+            width: 20px;
+            max-width: 100%; /* Prevent the logo from becoming larger than its container */
+            max-height: 100%;
+        }
+        .subtextgrey{ 
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            padding-left: 10px;
+            padding-top: 0px;
+            padding-bottom: 25px;
+        }
+        .StoryText{
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            text-align: left;
+            padding-left: 5px;
+            padding-right: 5px;
+            text-indent: 20px;
+        }
+        .StoryText2{
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            text-align: left;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 20px;
+        }
+        
+        .subtextgrey2{ 
+            font-family: 'Roboto', sans-serif;
+            font-size: 8px;
+            padding-top: 0px;
+            padding-bottom: 25px;
+            text-align: center;
+        }
+        .boldtext{
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            text-align: left;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+        .matttestimony img{
+            width: 100%;
+            height: auto;
+            text-align: left;
+            padding-left: 0;
+        }
+
+        .videocontainer {
+            display: flex; /* Use flexbox to enable easy centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            width: 100%; /* Full width of its parent */
+            height: 0; /* Initial height, will be overridden by padding-top for aspect ratio */
+            padding-top: 56.25%; /* Aspect ratio of 16:9 (9 / 16 = 0.5625) */
+            position: relative; /* Positioning context for the video */
+        }
+
+        .videocontainer video {
+            position: absolute; /* Absolute position within .videocontainer */
+            top: 0;
+            left: 0;
+            width: 100%; /* Full width of .videocontainer */
+            height: 100%; /* Full height of .videocontainer */
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="home"><a href="/" style="text-decoration: none; color: inherit;">Home</a></div>
+        <div class="logo-container">
+            <img src="RoslynNationalCroquetLogo.png" alt="Logo">
+        </div>
+
+        <div class="menu">
+            <div class="menu-item"><a href="/mobileplayers" style="text-decoration: none; color: inherit;">Players</a></div>
+            <div class="menu-item"><a href="/mobilestandings" style="text-decoration: none; color: inherit;">Standings</a></div>
+            <div class="menu-item"><a href="/about" style="text-decoration: none; color: inherit;">About</a></div>
+        </div>
+    </header>
+
+    <div class="title">Wicket Controversy </div>
+    <div class="subtextgrey">Monday, July 22, 2024</div>
+
+    <div class="StoryText">A recent incident at the Roslyn National Croquet Club has sparked significant controversy, leading to a formal statement from Hon. Matthew D. Kramer. The events in question occurred during a match on July 20, 2024, involving Mr. Huckleberry J. Fields. According to Mr. Kramer, Mr. Fields’ actions during the match have raised serious concerns about rule violations and integrity, prompting calls for a full investigation.</div>
+    <div class="StoryText2"><br>Mr. Kramer emphasized the need for transparency and accountability within the club, urging for special counsel to be appointed and witnesses to be interviewed. He believes the club members deserve to be informed of the allegations and any potential judgments. <br> <br> Below is the full statement from Hon. Matthew D. Kramer:</div>
+
+
+    <div class="matttestimony">
+        <img src="assets/IMG_1330.jpg" alt="Matt Testimony">
+    </div>
+
+    <div class="StoryText2"> <br>Max Grucella, the older brother of one of Roslyn National's most prominent members, has also brought more information about the matter to our attention. A video has surfaced of Huckleberry saying "Yeaaaa boy we're getting fucking hammered today!" while enroute to a Roslyn National sactioned Croquet match. We are saddened to hear this behavior and believe that may have contributed to Huck's alteration of the course conditions.  </div>
+
+    <div class="videocontainer">
+        <video controls width="250">
+            <source src="assets/4B2890AB-B848-41B3-A5D9-D28DD20F8A34.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="StoryText2"><br><br> The Roslyn National Croquet Club is now at a crossroads, with this controversy shedding light on the importance of adhering to the rules and maintaining the high standards expected at such a prestigious institution. As the investigation unfolds, club members and enthusiasts alike will be watching closely to see how the situation is resolved and what measures will be taken to prevent such incidents in the future. </div>
+    
+</body>
+</html>
