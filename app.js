@@ -44,5 +44,9 @@ app.get('/MondayJuly22', (req, res) => {
     res.sendFile(path.join(__dirname, 'news/MondayJuly22.html')); // Serve your standings.html file
 });
 
+app.get('/FridayJuly26', (req, res) => {
+    res.sendFile(path.join(__dirname, 'news/FridayJuly26.html')); // Serve your standings.html file
+});
+
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`)); // 
